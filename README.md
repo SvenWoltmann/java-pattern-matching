@@ -27,7 +27,7 @@ The folders, in the order of the article:
 * `does-not-compile/` – the listings the article shows with a compiler error; the first line of each file names the error. Compile one with `javac -d /tmp does-not-compile/ScopeWithOr.java` to see it. The messages in the article come from `javac` 27; up to Java 26, the "missing patterns" lines are not printed.
 * `preview/` – primitive type patterns, a preview feature in Java 23 to 27: `java --enable-preview preview/PrimitiveTypePatterns.java`
 
-`SwitchWithoutCaseNull` ends with a `NullPointerException` on purpose: the article shows what a `switch` without `case null` does with `null`.
+Two files end with an exception on purpose, because the article shows it: `InstanceofWrongCast` with a `ClassCastException` (the test checks for `Number`, the cast assumes `Integer`), and `SwitchWithoutCaseNull` with a `NullPointerException` (a `switch` without `case null` receives `null`).
 
 
 <!-- happycoders-resources:start -->
