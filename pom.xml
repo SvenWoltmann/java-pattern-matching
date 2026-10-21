@@ -27,10 +27,14 @@
          them. -->
     <sonar.coverage.exclusions>**/*.java</sonar.coverage.exclusions>
 
-    <sonar.issue.ignore.multicriteria>e1</sonar.issue.ignore.multicriteria>
+    <sonar.issue.ignore.multicriteria>e1,e2</sonar.issue.ignore.multicriteria>
     <!-- The examples print their results; IO.println() is the program's output, not logging. -->
     <sonar.issue.ignore.multicriteria.e1.ruleKey>java:S106</sonar.issue.ignore.multicriteria.e1.ruleKey>
     <sonar.issue.ignore.multicriteria.e1.resourceKey>**/*.java</sonar.issue.ignore.multicriteria.e1.resourceKey>
+    <!-- SwitchWithoutCaseNull passes null to a switch without case null on purpose: the
+         NullPointerException it ends with is what the article shows. -->
+    <sonar.issue.ignore.multicriteria.e2.ruleKey>javabugs:S2259</sonar.issue.ignore.multicriteria.e2.ruleKey>
+    <sonar.issue.ignore.multicriteria.e2.resourceKey>**/SwitchWithoutCaseNull.java</sonar.issue.ignore.multicriteria.e2.resourceKey>
   </properties>
 
   <build>

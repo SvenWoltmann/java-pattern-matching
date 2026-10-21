@@ -21,7 +21,8 @@ final class Money {
 }
 
 void main() {
-  IO.println(new Money(999, "EUR").equals(new Money(999, "EUR")));
-  IO.println(new Money(999, "EUR").equals(new Money(999, "USD")));
-  IO.println(new Money(999, "EUR").equals("9.99 EUR"));
+  Money price = new Money(999, "EUR");
+  IO.println(price.equals(new Money(999, "EUR")));
+  IO.println(price.equals(new Money(999, "USD")));
+  IO.println(price.equals("9.99 EUR"));
 }
