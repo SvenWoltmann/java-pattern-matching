@@ -24,5 +24,6 @@ void main() {
   Money price = new Money(999, "EUR");
   IO.println(price.equals(new Money(999, "EUR")));
   IO.println(price.equals(new Money(999, "USD")));
-  IO.println(price.equals("9.99 EUR"));
+  Object text = "9.99 EUR";
+  IO.println(price.equals(text));
 }
