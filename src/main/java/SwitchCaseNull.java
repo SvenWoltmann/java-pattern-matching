@@ -1,8 +1,8 @@
 String describe(Object obj) {
   return switch (obj) {
-    case null      -> "null";
     case String s  -> "string: " + s;
     case Integer i -> "integer, squared: " + i * i;
+    case null      -> "null";
     default        -> "something else";
   };
 }

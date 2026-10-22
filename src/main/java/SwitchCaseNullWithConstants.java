@@ -1,8 +1,8 @@
 String httpMethod(String method) {
   return switch (method) {
-    case null          -> "no method given";
     case "GET", "HEAD" -> "read-only";
     case "POST", "PUT" -> "writes data";
+    case null          -> "no method given";
     default            -> "unknown: " + method;
   };
 }
