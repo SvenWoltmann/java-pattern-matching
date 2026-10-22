@@ -7,7 +7,7 @@
 
 ## Article
 
-The code refers to the following articles (not yet published):
+The code refers to the following articles:
 * English: [Pattern Matching in Java: instanceof, switch, and Record Patterns](https://www.happycoders.eu/java/pattern-matching/)
 * German: [Pattern Matching in Java: instanceof, switch und Record Patterns](https://www.happycoders.eu/de/java/pattern-matching/)
 
