@@ -16,7 +16,7 @@
     <!-- Plugin versions -->
     <surefire-plugin.version>3.6.0</surefire-plugin.version>
     <spotless.version>3.10.4</spotless.version>
-    <jacoco.version>0.8.15</jacoco.version>
+    <jacoco.version>0.8.16</jacoco.version>
 
     <!-- SonarQube Cloud setup -->
     <sonar.projectKey>SvenWoltmann_java-pattern-matching</sonar.projectKey>
